@@ -65,47 +65,105 @@ const About = () => {
           <h3 className="text-2xl font-bold text-center text-foreground mb-12">
             Hành trình phát triển
           </h3>
-          <div className="relative">
-            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-primary"></div>
-            <div className="space-y-12">
-              <div className="flex items-center justify-center">
-                <div className="bg-card rounded-lg p-6 shadow-soft max-w-md border border-border">
-                  <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
-                      <span className="text-primary-foreground font-bold">2014</span>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-foreground">Thành lập CLB</h4>
-                      <p className="text-muted-foreground text-sm">07/11/2014 - Ngày ra đời của TDMU IT CLUB</p>
-                    </div>
-                  </div>
+          <div className="max-w-4xl mx-auto">
+            <div className="space-y-8">
+              {/* 2014 */}
+              <div className="flex items-center gap-8">
+                <div className="flex-shrink-0 w-32 text-right">
+                  <div className="text-2xl font-bold text-primary">2014</div>
+                  <div className="text-sm text-muted-foreground">07/11</div>
                 </div>
+                <div className="flex-shrink-0 relative">
+                  <div className="w-4 h-4 bg-primary rounded-full border-4 border-background shadow-soft"></div>
+                  <div className="absolute top-4 left-1/2 transform -translate-x-1/2 w-0.5 h-16 bg-border"></div>
+                </div>
+                <Card className="flex-1 bg-gradient-card border-border shadow-soft hover:shadow-accent transition-smooth">
+                  <CardContent className="p-6">
+                    <h4 className="text-lg font-semibold text-foreground mb-2">Thành lập CLB</h4>
+                    <p className="text-muted-foreground">
+                      Ngày ra đời của TDMU IT CLUB - khởi đầu cho hành trình kết nối đam mê công nghệ của sinh viên TDMU
+                    </p>
+                  </CardContent>
+                </Card>
               </div>
-              <div className="flex items-center justify-center">
-                <div className="bg-card rounded-lg p-6 shadow-soft max-w-md border border-border">
-                  <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center">
-                      <span className="text-accent-foreground font-bold">2022</span>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-foreground">Giải nhất TDMU</h4>
-                      <p className="text-muted-foreground text-sm">Đạt giải nhất Hội thi Lập trình Sinh viên TDMU</p>
-                    </div>
-                  </div>
+
+              {/* 2018 */}
+              <div className="flex items-center gap-8">
+                <div className="flex-shrink-0 w-32 text-right">
+                  <div className="text-2xl font-bold text-accent">2018</div>
+                  <div className="text-sm text-muted-foreground">Phát triển</div>
                 </div>
+                <div className="flex-shrink-0 relative">
+                  <div className="w-4 h-4 bg-accent rounded-full border-4 border-background shadow-soft"></div>
+                  <div className="absolute top-4 left-1/2 transform -translate-x-1/2 w-0.5 h-16 bg-border"></div>
+                </div>
+                <Card className="flex-1 bg-gradient-card border-border shadow-soft hover:shadow-accent transition-smooth">
+                  <CardContent className="p-6">
+                    <h4 className="text-lg font-semibold text-foreground mb-2">Mở rộng hoạt động</h4>
+                    <p className="text-muted-foreground">
+                      Phát triển các chương trình đào tạo chuyên sâu và tham gia nhiều cuộc thi lập trình
+                    </p>
+                  </CardContent>
+                </Card>
               </div>
-              <div className="flex items-center justify-center">
-                <div className="bg-card rounded-lg p-6 shadow-soft max-w-md border border-border">
-                  <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
-                      <span className="text-primary-foreground font-bold">2024</span>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-foreground">Phát triển mạnh mẽ</h4>
-                      <p className="text-muted-foreground text-sm">Mở rộng hoạt động và đạt nhiều thành tích nổi bật</p>
-                    </div>
-                  </div>
+
+              {/* 2022 */}
+              <div className="flex items-center gap-8">
+                <div className="flex-shrink-0 w-32 text-right">
+                  <div className="text-2xl font-bold text-primary">2022</div>
+                  <div className="text-sm text-muted-foreground">Thành tích</div>
                 </div>
+                <div className="flex-shrink-0 relative">
+                  <div className="w-4 h-4 bg-primary rounded-full border-4 border-background shadow-soft"></div>
+                  <div className="absolute top-4 left-1/2 transform -translate-x-1/2 w-0.5 h-16 bg-border"></div>
+                </div>
+                <Card className="flex-1 bg-gradient-card border-border shadow-soft hover:shadow-accent transition-smooth">
+                  <CardContent className="p-6">
+                    <h4 className="text-lg font-semibold text-foreground mb-2">Giải nhất TDMU</h4>
+                    <p className="text-muted-foreground">
+                      Đạt giải nhất Hội thi Lập trình Sinh viên TDMU - khẳng định vị thế dẫn đầu
+                    </p>
+                  </CardContent>
+                </Card>
+              </div>
+
+              {/* 2023 */}
+              <div className="flex items-center gap-8">
+                <div className="flex-shrink-0 w-32 text-right">
+                  <div className="text-2xl font-bold text-accent">2023</div>
+                  <div className="text-sm text-muted-foreground">Vươn xa</div>
+                </div>
+                <div className="flex-shrink-0 relative">
+                  <div className="w-4 h-4 bg-accent rounded-full border-4 border-background shadow-soft"></div>
+                  <div className="absolute top-4 left-1/2 transform -translate-x-1/2 w-0.5 h-16 bg-border"></div>
+                </div>
+                <Card className="flex-1 bg-gradient-card border-border shadow-soft hover:shadow-accent transition-smooth">
+                  <CardContent className="p-6">
+                    <h4 className="text-lg font-semibold text-foreground mb-2">Olympic & ICPC</h4>
+                    <p className="text-muted-foreground">
+                      Thành tích cao tại Olympic Tin học SV Việt Nam và tham gia ICPC Asia Regional
+                    </p>
+                  </CardContent>
+                </Card>
+              </div>
+
+              {/* 2024 */}
+              <div className="flex items-center gap-8">
+                <div className="flex-shrink-0 w-32 text-right">
+                  <div className="text-2xl font-bold text-primary">2024</div>
+                  <div className="text-sm text-muted-foreground">Hiện tại</div>
+                </div>
+                <div className="flex-shrink-0 relative">
+                  <div className="w-4 h-4 bg-gradient-primary rounded-full border-4 border-background shadow-glow animate-pulse"></div>
+                </div>
+                <Card className="flex-1 bg-gradient-primary text-primary-foreground shadow-glow hover:shadow-xl transition-smooth">
+                  <CardContent className="p-6">
+                    <h4 className="text-lg font-semibold mb-2">Phát triển mạnh mẽ</h4>
+                    <p className="opacity-90">
+                      Mở rộng hoạt động, tăng cường kết nối cộng đồng và đạt nhiều thành tích nổi bật
+                    </p>
+                  </CardContent>
+                </Card>
               </div>
             </div>
           </div>
