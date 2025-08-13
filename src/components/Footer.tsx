@@ -2,20 +2,28 @@ import { Facebook, Youtube, Mail, Code2, Heart } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-  
+
   const quickLinks = [
     { name: "Trang chủ", href: "#home" },
     { name: "Giới thiệu", href: "#about" },
     { name: "Hoạt động", href: "#activities" },
     { name: "Thành tích", href: "#achievements" },
     { name: "Cơ cấu tổ chức", href: "#organization" },
-    { name: "Liên hệ", href: "#contact" }
+    { name: "Liên hệ", href: "#contact" },
   ];
 
   const socialLinks = [
-    { icon: Facebook, href: "https://facebook.com/tdmuitclub", label: "Facebook" },
-    { icon: Youtube, href: "https://youtube.com/@tdmuitclub", label: "YouTube" },
-    { icon: Mail, href: "mailto:clbit@tdmu.edu.vn", label: "Email" }
+    {
+      icon: Facebook,
+      href: "https://facebook.com/tdmuitclub",
+      label: "Facebook",
+    },
+    {
+      icon: Youtube,
+      href: "https://youtube.com/@tdmuitclub",
+      label: "YouTube",
+    },
+    { icon: Mail, href: "mailto:clbit@tdmu.edu.vn", label: "Email" },
   ];
 
   return (
@@ -26,17 +34,24 @@ const Footer = () => {
           {/* Club Info */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-3 mb-6">
-              <div className="w-12 h-12 bg-accent rounded-lg flex items-center justify-center">
-                <Code2 className="w-8 h-8 text-accent-foreground" />
+              <div className="w-12 h-12 bg-blue-400 rounded-lg flex items-center justify-center">
+                <img
+                  src="/clbITLogo.jpg"
+                  alt=""
+                  className="w-8 h-8 rounded-xl text-accent-foreground"
+                />
               </div>
               <div>
                 <h3 className="text-xl font-bold">TDMU IT CLUB</h3>
-                <p className="text-primary-foreground/80 italic">I code, therefore I am</p>
+                <p className="text-primary-foreground/80 italic">
+                  I code, therefore I am
+                </p>
               </div>
             </div>
             <p className="text-primary-foreground/80 leading-relaxed mb-6 max-w-md">
-              Câu lạc bộ Công nghệ thông tin - Trường Đại học Thủ Dầu Một.
-              Nơi kết nối đam mê công nghệ và phát triển tài năng lập trình từ năm 2014.
+              Câu lạc bộ Công nghệ thông tin - Trường Đại học Thủ Dầu Một. Nơi
+              kết nối đam mê công nghệ và phát triển tài năng lập trình từ năm
+              2014.
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((social, index) => (
@@ -76,15 +91,19 @@ const Footer = () => {
             <div className="space-y-3 text-primary-foreground/80">
               <div>
                 <div className="font-medium">Email</div>
-                <a href="mailto:clbit@tdmu.edu.vn" className="hover:text-accent transition-smooth">
+                <a
+                  href="mailto:clbit@tdmu.edu.vn"
+                  className="hover:text-accent transition-smooth"
+                >
                   clbit@tdmu.edu.vn
                 </a>
               </div>
               <div>
                 <div className="font-medium">Địa chỉ</div>
                 <div className="text-sm">
-                  Trường Đại học Thủ Dầu Một<br />
-                  6 Đại lộ Bình Dương, Hiệp Hòa<br />
+                  Trường Đại học Thủ Dầu Một
+                  <br />
+                  Số 6, Trần Văn Ơn <br />
                   Thủ Dầu Một, Bình Dương
                 </div>
               </div>
