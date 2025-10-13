@@ -6,12 +6,13 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
-    { name: "Trang chủ", href: "#home" },
-    { name: "Giới thiệu", href: "#about" },
-    { name: "Hoạt động", href: "#activities" },
-    { name: "Thành tích", href: "#achievements" },
-    { name: "Cơ cấu tổ chức", href: "#organization" },
-    { name: "Liên hệ", href: "#contact" },
+    { name: "Trang chủ", href: "/" },
+    { name: "Giới thiệu", href: "/#about" },
+    { name: "Hoạt động", href: "/#activities" },
+    { name: "Thành tích", href: "/#achievements" },
+    { name: "Cơ cấu tổ chức", href: "/#organization" },
+    { name: "Blog", href: "/blog" },
+    { name: "Liên hệ", href: "/#contact" },
   ];
 
   return (
